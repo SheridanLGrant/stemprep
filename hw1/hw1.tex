@@ -1,0 +1,22 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+
+\newcommand{\Pp}{\emph{\emph{P}}}
+
+\begin{document}
+
+\title{Statistics Homework 1}
+\author{Mr. Grant}
+\maketitle
+
+\begin{enumerate}
+	\item Do the first two chapters, ``Intro to basics'' and ``Vectors,'' of the Datacamp R tutorial at https://www.datacamp.com/courses/free-introduction-to-r. Log in with your Facebook or Gmail.
+	\item Calculate the probability that the NBA championship series between the Golden State Warriors and the Cleveland Cavaliers lasts 5 games or longer, assuming that the games are independent and the probability that Golden State wins an individual game is $\frac{2}{3}$.
+	\item In class, we saw an example in which a team is more likely to win a game when they've won the previous game, i.e. $\Pp(G_1) = \frac{2}{3}$ but $\Pp(G_2 | G_1) = \frac{3}{4}$ and $\Pp(C_1) = \frac{1}{3}$ but $\Pp(C_2 | C_1) = \frac{1}{2}$. Now consider a scenario in which a team is \textit{less} likely to win the second game after winning the first (perhaps losing a game makes the loser motivates to come back and play harder in the next game): $\Pp(G_2 | G_1) = \frac{1}{2}$ and $\Pp(C_2 | C_1) = \frac{1}{4}$. Compute the probability that the first two games end with the teams tied 1-1.
+	\item \textbf{CHALLENGE:} in the previous question, we would say that games are \textit{positively correlated} if winning the first game makes the winner more likely to win the second ($\Pp(G_2 | G_1) > \Pp(G_1)$ and $\Pp(C_2 | C_1) > \Pp(C_1)$), and \textit{negatively correlated} if winning the first game makes the winner less likely to win the second ($\Pp(G_2 | G_1) < \Pp(G_1)$ and $\Pp(C_2 | C_1) < \Pp(C_1)$). Prove that when the first two games are positively correlated, the chance of a 1-1 tie is lower than when the games are independent, and that when the first two games are negatively correlated, the chance of a 1-1 tie is higher than when the games are independent.
+	\item \textbf{CHALLENGE:} this problem continues the cooties example from class. The probability of the cooties test coming out positive when the person being tested \textit{does not} have cooties is know as the ``false positive rate.'' How low does the false positive rate have to be to make the probability of a positive cooties test being correct greater than 50\%?
+\end{enumerate}
+
+\end{document}
