@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+
+\newcommand{\Pp}{\emph{\emph{P}}}
+
+\begin{document}
+
+\title{Statistics Homework 2}
+\author{Mr. Grant}
+\maketitle
+
+Due Date: Tuesday, July 11th
+
+\begin{enumerate}
+	\item Complete all 6 chapters of Datacamp's ``Introduction to R.'' Email Mr. Grant a screenshot of the 6 completed checkmarks at SLGstats@uw.edu.
+	\item Email Mr. Grant with your name, your height, your shoe size (say whether it is men's or women's), and the state that you are from.
+	\item You and your friend decide to play Texas Hold 'Em poker, so you buy some fake cigars and a standard 52-card deck of cards. In a round of Texas Hold 'Em, everyone is randomly dealt a hand of 2 cards to start out. Answer the following questions, and you're on your way to becoming a gambling expert!
+	\begin{itemize}
+		\item The first card is dealt to you. What is the probability that it is a ``face card'' (a Jack, Queen, or King)?
+		\item Your first card is a Jack. What is the probability that the second card you are dealt is a Jack as well?
+		\item The cards have been dealt, and you and your friend each have 2-card hands. You see that you have a pair of Kings--a good hand. The only way your friend could have as good of a hand as you or better is if they have two Kings or two Aces. Given that you can see your hand, what is the probability that your friend also has two Kings? What is the probability that they have two Aces? What is the probability that their hand is at least as good as yours?
+	\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+	\item N/A
+	\item N/A
+	\begin{itemize}
+		\item There are 52 cards you could possibly receive, and 12 of them are face cards, so the probability is $\frac{12}{52} = \frac{3}{13}$.
+		\item We want $\Pp(J_2 | J_1)$. Given that you have a Jack already, there are 3 Jacks and 51 cards total left in the deck. So $\Pp(J_2 | J_1) = \frac{3}{51} = \frac{1}{17}$.
+		\item We need $\Pp(\text{Your friend has 2 Kings} | \text{You have 2 Kings})$ and \\ $\Pp(\text{Your friend has 2 Aces} | \text{You have 2 Kings})$. Given that you have 2 Kings, there are 50 cards left in the deck; 2 are Kings, and 4 are Aces. Let's find the probability your friend has 2 Kings, given that you have 2 Kings. The probability that their first card is a King, given that you already have two, is $\frac{2}{50} = \frac{1}{25}$. And then, given that they have a King and you have two, the probability that their second card is a King is $\frac{1}{49}$. So $\Pp(\text{Your friend has 2 Kings} | \text{You have 2 Kings}) = \frac{2}{50} \frac{1}{49} = \frac{1}{1225}$ and similarly $\Pp(\text{Your friend has 2 Aces} | \text{You have 2 Kings}) = \frac{4}{50} \frac{3}{49} = \frac{6}{1225}$ and so the probability of your friend having a better hand than you is the sum of those two probabilities, $\frac{7}{1225}$. Looks like you're (probably) gonna win some money!
+	\end{itemize}
+\end{enumerate}
+\end{document}
