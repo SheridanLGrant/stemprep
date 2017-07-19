@@ -1,4 +1,8 @@
 d <- read.csv('class_data_complete.csv')
+d$height <- d$Height..ft. + (d$Height..in. / 12)
+
+
+
 head(d)
 d$height <- d$Height..ft. + d$Height..in./12
 hist(d$height)

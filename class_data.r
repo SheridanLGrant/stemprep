@@ -12,5 +12,5 @@ mean(d$Shoe.Size[d$Grade == 7])
 quantile(d$Shoe.Size[d$Grade == 8], 0.5)
 quantile(d$Shoe.Size[d$Grade == 7], 0.5)
 
-hist(d$Shoe.Size[d$Grade == 8])
-hist(d$Shoe.Size[d$Grade == 7])
+hist(d$Shoe.Size[d$Grade == 8], bins = 20)
+hist(d$Shoe.Size[d$Grade == 7], bins = 20)
