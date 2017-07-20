@@ -1,4 +1,5 @@
 d <- read.csv('class_data_complete.csv')
+d$State
 d$height <- d$Height..ft. + (d$Height..in. / 12)
 
 
