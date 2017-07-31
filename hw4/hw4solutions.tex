@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,graphicx}
+
+\newcommand{\Pp}{\emph{\emph{P}}}
+
+\begin{document}
+
+\title{Statistics Homework 4}
+\author{Mr. Grant}
+\maketitle
+
+\textbf{Due Date:} Tuesday, July 18th \\
+
+Turn in this homework:
+\begin{itemize}
+	\item On a sheet of lined notebook paper
+	\item With your name, the date, and the name of this class on it
+	\item With each problem clearly numbered
+	\item With your work shown
+\end{itemize}
+
+\begin{enumerate}
+	\item The mean of Aaliyah, Branden, Carter, and Daniel's shoe sizes is 9. Aaliyah is a size 8, Branden a size 11, and Carter a size 6.5. What is Daniel's shoe size?
+	\item There are 5 students in a sample: Ephraim, Felicia, Giselle, Harry, and Ingrid. Ephraim owns 8 pairs of shoes, Felicia owns 20, Giselle owns 30, and Harry owns 3. Suppose you are told that the median number of shoes owned in this sample is 8. What is the largest number of shoes that Ingrid could own? The smallest? Now suppose you are told that the median is 20. What is the largest number of shoes that Ingrid could own? The smallest?
+	\item In the group Jasmine, Kyungmin, Leticia, Mokoa, and Naira, Jasmine and Mokoa each have 1 sibling and Kyungmin and Leticia have 2. You are told that the mode of this group is 1. How many siblings does Naira have?
+	\item Draw a histogram of the shoe sizes of the Texans in the class, using bins of width 1.
+	\item The image below is called a ``frequency histogram"; rather than the number of US households in each column, it shows the percentage of US households in each column. Your friend from Vietnam is visiting the United States for the first time, and you want to help her understand our economy by telling her what a ``typical'' US household earns in a year. Would you tell her the mean household income, the median income (as this graph does), or the mode? Why? (There is no right answer to this question, so what really matters is your explanation.)
+\end{enumerate}
+\centering
+\includegraphics[scale=0.5]{income}
+
+
+\begin{enumerate}
+	\item Call Daniel's shoe size $d$. Then we know from the formula for the mean that $\frac{8 + 11 + 6.5 + d}{4} = 9$ so that $8 + 11 + 6.5 + d = 36$ and solving for $d$ we get $d = 10.5$.
+	\item If the median is 8, then 8 must be in the ``middle'' of the number of shoes. Since 20 and 30 are larger than 8 and 3 is smaller, we need another number less than or equal to 8. So Ingrid could have as many as 8 pairs and as few as zero. If the median is 20, then using the same logic, Ingrid must have at least 20 pairs. So the smallest number she could have is 20, the largest infinity.
+	\item Without information for Naira, the mode is tied between 1 and 2 (2 people have 1 sibling and 2 people have 2 siblings). So Naira must break the tie; that is, she must have 1 sibling.
+	\item \includegraphics{hw4hist}
+	\item As we can see from the graph, the most frequent (or most common) incomes in the united states are pretty low, in the 10- to 30-thousand dollar range. But incomes get really high--there are lots of people who make a ton of money. This means that the mean will be pretty high, so most people in the US will actually make less money than the mean income. For this reason, the median is probably the best choice, because it shows the amount of money made by a typical family and isn't affected by the many multi-millionaires and multi-billionaires. The mode is also an okay choice, since it's important to know that it is most common for families in the US to make a pretty small amount of money.
+\end{enumerate}
+
+\end{document}
