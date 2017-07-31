@@ -44,13 +44,17 @@ These questions all use the data from \textit{class\_data\_complete.csv}.
 
 \begin{enumerate}
 	\item \includegraphics{hw5boxplot}
-	\item We can from the bold black line that the median height of the boys is around 5.7 ft, whereas for girls it is about 5.2 ft. Furthermore, the first quartile of boys' heights is taller than the third quartile of girls' heights. These both indicate that boys are taller than girls on average. The boys' heights appear to be more variable, as well. The range of heights is much larger for boys: their heights run from about 4.8 ft to 6.3 ft, whereas the girls' heights only run from 5 ft to 5.8 ft. The ``box'' in the boxplot is a bit bigger for boys than girls, as well.
-	\item See attached code. The probability of a girl 5'4" or shorter is the number of girls 5'4" or shorter divided by the total number of girls, which is .764. The probability of a girl taller than 5'8" is, similarly (see how these first two questions are basically the same question because they require the exact same kind of reasoning), .058. The third part is a conditional probability: we count the number of Idaras (just one, sadly) and divide by the condition: the number of girls 5'5" or taller. That gives us 0.25. For the final part, we need to count the number of people who are girl, Hawaiian, and exactly 5 feet. We can use 3 conditions and put them together with ``and'' symbols (see code) to get a probability of .176.
+	\item We can from the bold black line that the median height of the boys is around 5.7 ft, whereas for girls it is about 5.2 ft. Furthermore, the first quartile of boys' heights is taller than the third quartile of girls' heights. These both indicate that boys are taller than girls on average. The boys' heights appear to be more variable, as well. The range of heights is much larger for boys: their heights run from about 4.8 ft to 6.3 ft, whereas the girls' heights only run from 5 ft to 5.8 ft. The ``box'' in the boxplot is a bit bigger for boys than girls, additional evidence that boys' variability is higher.
+	\item See attached code. The probability of a girl 5'4" or shorter is the number of girls 5'4" or shorter divided by the total number of girls, which is .764. The probability of a girl taller than 5'8" is, similarly (see how these first two questions are basically the same question because they require the exact same kind of reasoning), .058. The third part is a conditional probability: we count the number of Idaras (just one, sadly) and divide by the condition: the number of girls 5'5" or taller. That gives us 0.25. For the final part, we need to count the number of people who are girls, Hawaiian, and exactly 5 feet. We can use 3 conditions and put them together with ``and'' symbols (see code) to get a probability of .176.
 	\item
 		\begin{enumerate}
 			\item Yes--the whole boys' box is taller than the whole girls' box.
-			\item It looks like Idara would be 
-		\end{enumerate}
+			\item It looks like Idara would be right at the third quartile of the boys, so she would technically not be shorter than Q3 (we can use the R quantile function to verify this).
+			\item It appears that Pearson will be an outlier (makes sense). Remember, we can calculate the ``interquartile range'' as $1.5 (Q3 - Q1)$ and add that to Q3 to see what the largest non-outlier would be. The attached R code does this. Turns out that if Idara were any taller, she'd be an outlier too!
+	\end{enumerate}
+	\item Looking at the bar graphs in the article, we can see that 47.5\% of white students finish at the school they started at in 6 years, whereas 38\% of black students finish at any school within 6 years.
+	\item About 27,260--we simply need 20.0\% of the total 136,309 Asian people.
+	\item These percentages are unlikely to apply to STEMprep students because y'all are not a representative sample of the population as a whole. If you had been randomly selected, these percentages might be close, but because you had to apply, take an entrance exam, and pay for the program, you are not a random sample. Most likely, a higher percentage of you will graduate college within 6 years, because you're academically motivated students!
 \end{enumerate}
 
 \end{document}

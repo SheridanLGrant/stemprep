@@ -1,0 +1,20 @@
+1. Do you more often watch movies at home or at a theater?
+
+2. How many other people do you typically watch movies with? 0, 1-2, or more than 2
+
+3. What is you favorite movie genre?
+	Action
+	Romance
+	Horror
+	Drama
+	Family
+	Comedy
+	None the Above
+
+4. How old are you?
+
+5. What gender do you identify as?
+	Female
+	Male
+	Other
+	Prefer not to respond
